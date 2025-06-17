@@ -1,5 +1,11 @@
 <?php
 
+//IMPORTAÇÃO DE ARQUIVOS
+require 'helpers.php';
+echo "<hr>";
+
+echo validarEnderecoEmail('macedohenrique322@gmail.com');
+// echo validarEnderecoEmail('https://google.com');
 echo "<h1>Hello World</h1>";
 echo"<hr>";
 //CRIAÇÃO DE VARIÁVEIS
@@ -12,7 +18,17 @@ echo"<br>";
 if($nome === 'Henrique' and $idade === 17) {
     echo 'Seja bem vindo(a)<br>' . $nome . "<br>";
 }
-//FUNÇÃO
+
+//PHPdocs
+
+/**
+ * 
+ * Função de saudação
+ * @param string $nome Nome do usuário
+ * @return string mensagem de saudação com o nome do usuário
+ * @author Henrique <macedohenrique322@gmail.com>
+ */
+
 function saudacao( $nome){
     return 'Olá, '. $nome;
 }
