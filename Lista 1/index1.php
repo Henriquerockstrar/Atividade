@@ -21,4 +21,26 @@ echo saudacao($nome) . "<br>";
 //DEBUGANFO VARIÁVEIS
 var_dump($nome, $idade);
 
+
+// 1 FORMA DE CRIAR ARRAY
+$arr = array(1,2,3,4,5);
+//2 FORMA DE CRIAR ARRAY
+$arr2 = [1,2,3,4,5];
+
+echo "<br>";
+
+//ENCONTRANDO UM ELEMENTO PELA POSIÇÃO
+echo $arr[0] . "" . $arr2[1];
+
+echo"<br>";
+
+foreach($arr2 as $number){
+    echo $number . "<br>";
+}
+
+//{
+//      chave: valor
+//}
+
+
 ?>
